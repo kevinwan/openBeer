@@ -15,7 +15,7 @@ def generate_urls():
         for item in total.json():
             for page in range(item['numPages']):
                 url = start_url + 'year/' + str(item['year']) + '/' + str(page+1)
-                print(url)a
+                print(url)
                 urls.append(url)
         return urls
     else:
